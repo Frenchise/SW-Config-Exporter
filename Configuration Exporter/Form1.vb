@@ -16,7 +16,7 @@ Public Class Form1
     Dim StopExporting As Boolean = False
 
     'Forms and New Windows
-    Dim Generic_Error As New Error_Message
+
 
 
     Private Sub SaveAsNewFiletypeClick(sender As Object, e As EventArgs) Handles SaveAs.Click
@@ -34,6 +34,7 @@ Public Class Form1
         Dim Open_Config As Boolean
         Dim SaveAsNew As Boolean = False
 
+        Dim Generic_Error As New Error_Message
 
         If swDoc Is Nothing Then
             'use the following to pass an error message to the Error Message Form
